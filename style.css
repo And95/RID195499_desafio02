@@ -1,0 +1,467 @@
+html,
+body {
+  width: 100%;
+  height: 3rem;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+span {
+  /* width: 5.75rem;
+  height: 0.9375rem; */
+  top: 28.5rem;
+  left: 67.5rem;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 100%;
+  color: #616161;
+}
+
+/****************** Header *******************/
+header {
+  /* width: 89.5%; */
+  width: auto;
+  /* height: 3.125rem; */
+  /* padding: 0.85rem 0px 0.85rem 10.5%; */
+  padding: 2.5% 0px;
+  background: #02a28f;
+  display: flex;
+  align-items: center;
+}
+
+header > h1 {
+  /* width: 16.75rem; */
+  width: auto;
+  height: 2rem;
+  margin-left: 13%;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+/****************** Main sections *******************/
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* grid-template-columns: repeat(2, 1fr); */
+  justify-content: center;
+  gap: 1.25rem;
+  /* padding: 1em 9.75em; */
+  margin: 0px 15%;
+  padding: 1em 0px;
+}
+
+/****************** Main banner *******************/
+
+.section1 {
+  /* width: 744; */
+  width: auto;
+  /* height: 396; */
+  height: 28rem;
+  top: 120px;
+  left: 156px;
+  box-sizing: border-box;
+}
+
+.containerBanner {
+  height: 100%;
+  /* width: 46.5vw; */
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 10px;
+  background: linear-gradient(#ffffff40, #000000e9), url("./assets/city.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 2rem;
+}
+
+.containerBanner h2 {
+  font-weight: 700;
+  margin-left: 1rem;
+}
+
+.containerBanner h3 {
+  font-weight: 400;
+  margin-left: 1rem;
+}
+
+.containerBanner h3:last-child {
+  margin-bottom: 1rem;
+}
+
+/****************** Section popular posts *******************/
+.section2 {
+  width: auto;
+  height: 28rem;
+  top: 120px;
+  left: 156px;
+  box-sizing: border-box;
+}
+
+.containerPopular {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 1.6em;
+}
+
+.PostTitle {
+  /* width: 22.5vw; */
+  width: auto;
+  border-radius: 10px;
+  /* padding: 16px 24px; */
+  padding: 1em 1.5em;
+  display: flex;
+  align-items: center;
+  background: #02a28f;
+  color: #fff;
+  box-shadow: 0px 10px 10px 0px #0000001a;
+}
+
+.popularPostCards {
+  /* width: 22.5vw; */
+  min-width: 22.5vw;
+  /* height: 96; */
+  top: 11.75em;
+  left: 57.8em;
+  padding: 0.85em 2.5em 0.85em 1em;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px 0px #0000001a;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.popularPostCards > img {
+  /* width: 8.25em; */
+  width: auto;
+  height: 4.375em;
+  top: 19.8125em;
+  left: 58.5625em;
+  border-radius: 10px;
+}
+
+.popularPostCards p b {
+  width: 10.75em;
+  height: 0.9375em;
+  top: 12.5625em;
+  left: 67.5625em;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 0.875em;
+  line-height: 100%;
+  color: #000000;
+}
+
+/****************** Section recents posts *******************/
+.section3 {
+  width: 46.5vw;
+  height: 70rem;
+  top: 33.75rem;
+  left: 9.75rem;
+  box-sizing: border-box;
+}
+
+#recentPostTitle {
+  width: auto;
+  height: 3.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 1em 1.5em;
+  box-shadow: 0px 10px 10px 0px #0000001a;
+  background: #02a28f;
+  color: #fff;
+}
+
+#recentPostTitle > nav > a {
+  color: #fff;
+  width: 4.25em;
+  height: 1.0625em;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 0.8em;
+  line-height: 100%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+}
+
+.containerPosts {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  row-gap: 1em;
+  margin-top: 1.5em;
+}
+
+.postRecentCards {
+  width: 22.5vw;
+  /* height: 60vh; */
+  height: 30em;
+  background: #fff;
+  box-shadow: 0px 10px 20px 0px #0000001a;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.postRecentCards > div > img {
+  /* width: 360; */
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  background: #d9d9d9;
+}
+
+.postRecentCards > div > h3 {
+  width: 7.5vw;
+  height: 0.5em;
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 100%;
+  color: #02a28f;
+  margin: 1.5em 0px;
+  padding: 0 1em;
+}
+
+.postRecentCards h2 {
+  /* width: 20.5vw; */
+  width: auto;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 1em;
+  color: #000;
+  padding: 0 0.8em;
+  margin-bottom: 0.8em;
+}
+
+.spanPersonDo {
+  line-height: 0.8em;
+  padding: 0px 1em;
+}
+
+.postRecentCards p {
+  /* width: 20.5vw; */
+  width: auto;
+  height: 8em;
+  font-weight: 400;
+  /* font-size: 0.775rem; */
+  font-size: 0.875em;
+  line-height: 1em;
+  color: #000;
+  padding: 0 1em;
+}
+
+.spanPersonDt {
+  width: 8em;
+  height: 1em;
+  font-weight: 500;
+  font-size: 0.775em;
+  line-height: 100%;
+  /* margin-top: 1em; */
+}
+
+.postRecentCards > span {
+  /* padding: 0.5rem 0.8rem 1rem 0.8rem; */
+  padding: 0.5em 1em 1em 1em;
+}
+
+/****************** Section sidebar categories *******************/
+.sidebar1 {
+  /* width: 24.5rem; */
+  width: auto;
+  height: 70rem;
+  top: 33.75rem;
+  left: 57.75rem;
+  box-sizing: border-box;
+}
+
+.containerCategory {
+  display: flex;
+  /* display: inline; */
+  flex-direction: column;
+  /* gap: 0.875rem; */
+}
+
+.categoryOptions {
+  display: flex;
+  justify-content: space-between;
+  /* width: 24.5em; */
+  width: auto;
+  height: 0.4em;
+}
+
+.categoryOptions:first-child {
+  margin-top: 1.25em;
+}
+
+.categoryOptions > span {
+  font-size: 0.8em;
+}
+
+/****************** Footer *******************/
+footer {
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 0;
+  /* margin-top: 93.75rem; */
+  background: #02a28f;
+}
+
+footer > h3 {
+  font-weight: 37.5em;
+  font-size: 0.875rem;
+  line-height: 100%;
+  color: #fff;
+}
+
+/****************** Media queries *******************/
+
+/*monitores ultrawide*/
+@media only screen and (min-width: 1441px) {
+  html,
+  body {
+    font-size: 28px;
+  }
+
+  /****************** Section popular posts *******************/
+  .containerPopular {
+    gap: 1.5em;
+  }
+}
+
+/*laptop L*/
+@media only screen and (/*min-width: 1025px*/ max-width: 1440px) {
+  /*Developed on this screen*/
+}
+
+/*laptop*/
+@media only screen and (/*min-width: 769px*/ max-width: 1024px) {
+  /****************** Header *******************/
+  header > h1 {
+    margin-left: 10%;
+  }
+
+  /****************** Section popular posts *******************/
+  .containerPopular {
+    gap: 1.2em;
+  }
+}
+
+/*tablet*/
+@media only screen and (/*min-width: 427px*/ max-width: 769px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+
+  /****************** Header *******************/
+  header > h1 {
+    margin-left: 7%;
+  }
+
+  /****************** Section popular posts *******************/
+  .containerPopular {
+    gap: 1.2em;
+  }
+}
+
+/*mobile*/
+@media only screen and (max-width: 426px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+
+  .section1 {
+    grid-area: 1/1;
+  }
+  .section2 {
+    grid-area: 3/1;
+  }
+
+  .section3 {
+    grid-area: 2/1;
+  }
+
+  .sidebar1 {
+    grid-area: 4/1;
+  }
+
+  /****************** Header *******************/
+  header {
+    /* width: auto; */
+    padding: 3.5% 0px;
+    justify-content: center;
+  }
+
+  header > h1 {
+    margin-left: 0px;
+  }
+
+  /****************** Main sections *******************/
+  main {
+    grid-template-columns: 1fr;
+    margin: 0px 5%;
+  }
+
+  /****************** Section popular posts *******************/
+  .section2 {
+    height: auto;
+    margin-top: 73em;
+  }
+
+  .containerPopular {
+    gap: 0.5em;
+  }
+
+  /****************** Section recents posts *******************/
+  .section3 {
+    width: 100%;
+  }
+
+  .postRecentCards {
+    width: auto;
+    height: 33em;
+  }
+
+  /****************** Section sidebar categories *******************/
+  .sidebar1 {
+    margin-top: 1em;
+    height: 20em;
+  }
+
+  /****************** Footer *******************/
+  footer {
+    height: 1rem;
+  }
+}
